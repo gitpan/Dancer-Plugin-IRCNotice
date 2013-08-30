@@ -36,6 +36,7 @@
       },
       "runtime" : {
          "requires" : {
+            "IO::Socket::IP" : "0",
             "perl" : "5.008005"
          }
       },
@@ -46,6 +47,17 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.01"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/bentglasstube/Dancer-Plugin-IRCNotice/issues"
+      },
+      "homepage" : "https://github.com/bentglasstube/Dancer-Plugin-IRCNotice",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/bentglasstube/Dancer-Plugin-IRCNotice.git",
+         "web" : "https://github.com/bentglasstube/Dancer-Plugin-IRCNotice"
+      }
+   },
+   "version" : "0.02"
 }
 

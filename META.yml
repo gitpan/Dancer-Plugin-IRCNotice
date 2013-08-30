@@ -22,5 +22,10 @@ no_index:
     - eg
     - examples
 requires:
+  IO::Socket::IP: 0
   perl: 5.008005
-version: 0.01
+resources:
+  bugtracker: https://github.com/bentglasstube/Dancer-Plugin-IRCNotice/issues
+  homepage: https://github.com/bentglasstube/Dancer-Plugin-IRCNotice
+  repository: https://github.com/bentglasstube/Dancer-Plugin-IRCNotice.git
+version: 0.02
