@@ -5,10 +5,10 @@ author:
 build_requires:
   Test::More: 0.88
 configure_requires:
-  Module::Build::Tiny: 0.023
+  Module::Build::Tiny: 0.026
 dynamic_config: 0
-generated_by: 'Dist::Milla version v1.0.3, Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921'
-license: perl
+generated_by: 'Dist::Milla version v1.0.4, Dist::Zilla version 4.300037, CPAN::Meta::Converter version 2.120921'
+license: mit
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
@@ -22,10 +22,11 @@ no_index:
     - eg
     - examples
 requires:
+  Dancer: 0
   IO::Socket::IP: 0
   perl: 5.008005
 resources:
   bugtracker: https://github.com/bentglasstube/Dancer-Plugin-IRCNotice/issues
   homepage: https://github.com/bentglasstube/Dancer-Plugin-IRCNotice
   repository: https://github.com/bentglasstube/Dancer-Plugin-IRCNotice.git
-version: 0.02
+version: 0.03

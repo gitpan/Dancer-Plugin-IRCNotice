@@ -8,7 +8,7 @@ use Dancer ':syntax';
 use Dancer::Plugin;
 use IO::Socket::IP;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 register notify => sub {
   my ($message) = @_;
@@ -119,8 +119,8 @@ Copyright 2013 Alan Berndt
 
 =head1 LICENSE
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+This library is free software.  You may redistribute it under the terms of the
+MIT license.
 
 =head1 SEE ALSO
 

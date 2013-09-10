@@ -4,9 +4,9 @@
       "Alan Berndt <alan@eatabrick.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Milla version v1.0.3, Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Milla version v1.0.4, Dist::Zilla version 4.300037, CPAN::Meta::Converter version 2.120921",
    "license" : [
-      "perl_5"
+      "mit"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -26,7 +26,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.023"
+            "Module::Build::Tiny" : "0.026"
          }
       },
       "develop" : {
@@ -36,6 +36,7 @@
       },
       "runtime" : {
          "requires" : {
+            "Dancer" : "0",
             "IO::Socket::IP" : "0",
             "perl" : "5.008005"
          }
@@ -58,6 +59,6 @@
          "web" : "https://github.com/bentglasstube/Dancer-Plugin-IRCNotice"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
 

@@ -1,5 +1,9 @@
 Revision history for Dancer-Plugin-IRCNotice
 
+0.03  2013-09-09 19:08:03 MST
+  - Fixed dependencies again
+  - Added LICENSE
+
 0.02  2013-08-30 12:19:56 MST
   - Fixed dependencies
 
