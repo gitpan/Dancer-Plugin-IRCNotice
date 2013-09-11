@@ -1,5 +1,9 @@
 Revision history for Dancer-Plugin-IRCNotice
 
+0.04  2013-09-11 09:40:33 MST
+  - Fix use of //=
+  - Fix issues with forking
+
 0.03  2013-09-09 19:08:03 MST
   - Fixed dependencies again
   - Added LICENSE

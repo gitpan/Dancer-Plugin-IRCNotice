@@ -8,7 +8,7 @@ use Dancer ':syntax';
 use Dancer::Plugin;
 use IO::Socket::IP;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 register notify => sub {
   my ($message) = @_;
@@ -17,10 +17,10 @@ register notify => sub {
 
   my $config = plugin_setting;
 
-  $config->{host}    //= 'chat.freenode.net';
-  $config->{nick}    //= sprintf('dpin%04u', int(rand() * 10000));
-  $config->{name}    //= $config->{nick};
-  $config->{channel} //= '#dpintest';
+  $config->{host}    ||= 'chat.freenode.net';
+  $config->{nick}    ||= sprintf('dpin%04u', int(rand() * 10000));
+  $config->{name}    ||= $config->{nick};
+  $config->{channel} ||= '#dpintest';
 
   fork and return if $config->{fork};
 
@@ -47,12 +47,14 @@ register notify => sub {
       $socket->say("QUIT");
 
       info "Notice sent";
+      exit if $config->{fork};
       return;
     }
   }
 
   info "Notice not sent";
 
+  exit if $config->{fork};
   return;
 };
 
